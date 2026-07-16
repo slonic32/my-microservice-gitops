@@ -62,7 +62,7 @@ spec:
           resources:
 {{ toYaml .Values.resources | nindent 12 }}
 
-           envFrom:
+          envFrom:
             - configMapRef:
                 name: {{ .Release.Name }}-config
 
